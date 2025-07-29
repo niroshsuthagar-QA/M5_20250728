@@ -1,0 +1,8 @@
+Task: 
+Modify your python script to make it an executable file using the argparse library to allow the user to input arguments via the command line.
+
+Hint: 
+This may require your script to be wrapped in functions/classes with the final lines being something like this...
+
+if __name__ == "__main__":
+    myFunction()
