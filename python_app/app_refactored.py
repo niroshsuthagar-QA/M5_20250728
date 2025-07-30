@@ -1,5 +1,3 @@
-## Before starting, in terminal run 'pip install -r requiremtns.txt'
-
 import pandas as pd
 from sqlalchemy import create_engine
 #import pyodbc
@@ -81,7 +79,7 @@ if __name__ == '__main__':
     # Instantiation
     #dropCount= 0
     #customer_drop_count = 0
-    filepath_input = 'module_5_tutor/data/03_Library Systembook.csv'
+    filepath_input = './data/03_Library Systembook.csv'
     date_columns = ['Book checkout', 'Book Returned']
     date_errors = None
 
@@ -102,7 +100,7 @@ if __name__ == '__main__':
     print(data)
 
     #Cleaning the customer file
-    filepath_input_2 = 'module_5_tutor/data/03_Library SystemCustomers.csv'
+    filepath_input_2 = './data/03_Library SystemCustomers.csv'
 
     data2 = fileLoader(filepath=filepath_input_2)
 
@@ -128,4 +126,4 @@ if __name__ == '__main__':
         server = 'localhost', 
         database = 'DE5_Module5'
     )
-    print('**************** End ****************')
+    print('**************** The End ****************')
