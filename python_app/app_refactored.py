@@ -110,20 +110,3 @@ if __name__ == '__main__':
 
     print(data2)
     print('**************** DATA CLEANED ****************')
-
-    print('Writing to SQL Server...')
-
-    writeToSQL(
-        data, 
-        table_name='loans_bronze', 
-        server = 'localhost', 
-        database = 'DE5_Module5' 
-    )
-
-    writeToSQL(
-        data2, 
-        table_name='customer_bronze', 
-        server = 'localhost', 
-        database = 'DE5_Module5'
-    )
-    print('**************** The End ****************')
